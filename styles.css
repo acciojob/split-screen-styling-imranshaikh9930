@@ -1,1 +1,60 @@
-/*  your css code here. If applicable */
+  * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Apply styles to the navigation bar */
+        .navbar {
+            background-color: #D7E8D4;
+            width: 16.66667%; /* 1/6th of the viewport width */
+            float: left;
+            height: 100vh;
+        }
+
+        /* Apply styles to the main content container */
+        .main-content {
+            width: 83.33333%; /* 5/6ths of the viewport width */
+            float: right;
+            height: 100vh;
+        }
+
+        /* Apply styles to the header and footer */
+        .header,
+        .footer {
+            background-color: yellowgreen;
+            height: 20%; /* 1/5th of the viewport height */
+            padding: 1em;
+        }
+
+        /* Apply styles to the content section */
+        .content {
+            width: 100%;
+			height:60%;
+            padding: 1em;
+			background:white;
+        }
+
+        /* Apply styles to the article and aside sections within the content */
+        .article {
+            width: 30%; /* 3/4ths of the content width */
+            float: right;
+            padding: 1em;
+            min-height: 60vh;
+			background:#EEEED0;
+			margin-top:-1rem;
+			margin-right:-1rem;
+        }
+
+        .aside {
+            width: 25%; /* 1/4th of the content width */
+            float: left;
+            padding: 1em;
+        }
+
+        /* Clear the floats to prevent layout issues */
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
